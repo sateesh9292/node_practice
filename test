@@ -1,1 +1,43 @@
-test
+Run mongoldb 
+ ./bin/mongod --dbpath ../data/
+ 
+ Inspect Node:
+———————
+1. node --inspect-brk server.js
+2. chrome://inspect/#devices
+3. Click on inspect
+
+
+Media Quires
+——————
+/* Extra small devices (phones, up to 480px) */
+@media screen and (max-width: 767px) {
+}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+}
+/* tablets/desktops and up ----------- */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+/* large desktops and up ----------- */
+@media screen and (min-width: 1200px) {
+}
+
+
+DisplayImmage in UI: 
+
+Let blob=new Blob([imgData],{type:’image/png});
+imageUrl=URL.createObjectURL(blob);
+imageUrl=this.sanitizer.bypassSecurityTrustUrl(imageUrl);
+
+
+Display Html content on the browser:
+
+<div [innerHTML]=“data”></div>
+
+fieldGlass:
+SMurapaka_vivm
+
+Create Components:
+——————————
+./node_modules/.bin/ng g c profile-new/all-drivers --module profile-new  --dry-run
